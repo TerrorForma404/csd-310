@@ -3,7 +3,7 @@ url = "mongodb+srv://admin:admin@cluster0.rsnru.mongodb.net/cluster0?retryWrites
 client = MongoClient(url)
 db = client.pytech
 One = {
-    "student_id": "0001",
+    "student_id": "1007",
     "first_name": "One",
     "last_name": "Won",
     "enrollments": [
@@ -31,7 +31,7 @@ One = {
 
 }
 Two = {
-    "student_id": "0002",
+    "student_id": "1008",
     "first_name": "Two",
     "last_name": "Too",
     "enrollments": [
@@ -60,7 +60,7 @@ Two = {
 
 # Frodo Baggins data document
 Three = {
-    "student_id": "0003",
+    "student_id": "1009",
     "first_name": "Three",
     "last_name": "Thirsty",
     "enrollments": [

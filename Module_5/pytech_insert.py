@@ -1,22 +1,22 @@
 from pymongo import MongoClient
-url = "mongodb+srv://admin:admin@cluster0.rsnru.mongodb.net/cluster0?retryWrites=true&w=majority"
+url = "mongodb+srv://admin:admin@cluster0.n5nen.mongodb.net/cluster0?retryWrites=true&w=majority"
 client = MongoClient(url)
 db = client.pytech
-One = {
-    "student_id": "1007",
+one = {
+    "student_id": 1007,
     "first_name": "One",
     "last_name": "Won",
     "enrollments": [
         {
             "term": "Term 1",
-            "gpa": "1.0",
+            "gpa": 1.0,
             "start_date": "January 1, 2021",
             "end_date": "October 1, 2021",
             "courses": [
                 {
                     "course_id": "Course 1",
                     "description": "One1",
-                    "instructor": "Gumbo",
+                   "instructor": "Gumbo",
                     "grade": "F"
                 },
                 {
@@ -30,15 +30,15 @@ One = {
     ]
 
 }
-Two = {
+two = {
     "student_id": "1008",
     "first_name": "Two",
     "last_name": "Too",
     "enrollments": [
         {
             "term": "Term 2",
-            "gpa": "2.00",
-            "start_date": "February 02, 2022",
+            "gpa": 2.00,
+            "start_date": "February 2, 2022",
             "end_date": "September 22, 2022",
             "courses": [
                 {
@@ -58,15 +58,15 @@ Two = {
     ]
 }
 
-Three = {
+three = {
     "student_id": "1009",
     "first_name": "Three",
     "last_name": "Thirsty",
     "enrollments": [
         {
             "term": "Term 3",
-            "gpa": "3.0",
-            "start_date": "March 03, 2023",
+            "gpa": 3.0,
+            "start_date": "March 3, 2023",
             "end_date": "September 33, 2033",
             "courses": [
                 {
@@ -77,7 +77,7 @@ Three = {
                 },
                 {
                     "course_id": "Course 4",
-                    "description": "Batman 4: Batman fights off Vietnam era flashbacks",
+                    "description": "Batman 4 Batman fights off Vietnam era flashbacks",
                     "instructor": "Poison Ivy",
                     "grade": "F--"
                 }
@@ -91,7 +91,7 @@ one_student_id = students.insert_one(one).inserted_id
 print("  Inserted student record One Won into the students collection with document_id " + str(one_student_id))
 
 two_student_id = students.insert_one(two).inserted_id
-print("  Inserted student record Two Too into the students collection with document_id " + str(two_student_id))
+print( " Inserted student record Two Too into the students collection with document_id " + str(two_student_id))
 
 three_student_id = students.insert_one(three).inserted_id
-print("  Inserted student record Three Thirty into the students collection with document_id " + str(three_student_id))
+print("  Inserted student record Three Thirty into the students collection with document_id "+ str(three_student_id))

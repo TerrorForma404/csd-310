@@ -58,7 +58,6 @@ Two = {
     ]
 }
 
-# Frodo Baggins data document
 Three = {
     "student_id": "1009",
     "first_name": "Three",
